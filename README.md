@@ -2,4 +2,5 @@
 
 #Test:
 #Version 0:
-#Template de Inicio
+##Template de Inicio
+##Se agrega pagina registro
