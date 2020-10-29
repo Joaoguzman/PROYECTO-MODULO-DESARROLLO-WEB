@@ -1,0 +1,19 @@
+*CSS CALENDARIO*/
+.container{
+    padding-top: 100px;
+}
+
+.btn-container{
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+.calendar{
+    border:1px;
+    border-color: black;
+    background: blueviolet;
+}
+
+.col{
+    border-style: solid;
+}
