@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style-calendario.css" type="text/css">
+    <link rel="stylesheet" href="css/style-calendar.css" type="text/css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="row btn-container ">
 
             <button type="button" class="col-md-4 btn btn-success" id="AddCita" data-toggle="modal"
-                data-target="#exampleModal">Agregar Cita</button>
+                data-target="#nueva_cita">Agregar Cita</button>
 
 
             <button type="button" class="col-md-4 btn btn-success" id="AddExamen" data-toggle="modal"
@@ -189,25 +189,190 @@
         </div>
     </div>
 
+    <!--NAV TABS-->
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="citas-tab" data-toggle="tab" href="#citas" role="tab" aria-controls="citas" aria-selected="true">Citas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Examenes</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="citas" role="tabpanel" aria-labelledby="citas-tab">
+                <div class="table-responsive">
+                    <table class="table table-sm" >
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Dr. / Dra.</th>
+                                <th>Especialidad</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Lugar</th>
+                                <th>Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla_citas">
+                            <tr>
+                                <td id="t_medico">Marcelo Fernandez</td>
+                                <td id="t_especialidad">Dermatología</td>
+                                <td id="t_fecha">05/11/2020</td>
+                                <td id="t_hora">10:00</td>
+                                <td id="t_lugar">Clinica Isamedica</td>
+                                <td id="t_nota">Llevar examenes</td>
+                            </tr>
+                            <tr>
+                                <td id="t_medico">Marcelo Fernandez</td>
+                                <td id="t_especialidad">Dermatología</td>
+                                <td id="t_fecha">05/11/2020</td>
+                                <td id="t_hora">10:00</td>
+                                <td id="t_lugar">Clinica Isamedica</td>
+                                <td id="t_nota">Llevar examenes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+    </div>
+
+
+
+    <div class="container">
+        <!-- NAV TABS  -->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="nav-item nav-link active show"
+                    id="nav-citas-tab" data-toggle="tab" href="#nav-citas" role="tab"
+                    aria-controls="nav-citas" aria-selected="true">Mis Citas</a> <a class="nav-item nav-link"
+                    id="nav-examenes-tab" data-toggle="tab" href="#nav-examenes" role="tab"
+                    aria-controls="nav-examenes" aria-selected="false">Mis Examenes</a></div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-citas" role="tabpanel"
+                aria-labelledby="nav-citas-tab">
+                <!--Contenido a mostrar-->
+                <div class="table-responsive d-flex flex-wrap flex-row justify-content-center">
+                    
+                        <div class="table-responsive">
+                            <table class="table table-sm" >
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Dr. / Dra.</th>
+                                        <th>Especialidad</th>
+                                        <th>Fecha</th>
+                                        <th>Hora</th>
+                                        <th>Lugar</th>
+                                        <th>Nota</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla_citas">
+                                    <tr>
+                                        <td id="t_medico">Marcelo Fernandez</td>
+                                        <td id="t_especialidad">Dermatología</td>
+                                        <td id="t_fecha">05/11/2020</td>
+                                        <td id="t_hora">10:00</td>
+                                        <td id="t_lugar">Clinica Isamedica</td>
+                                        <td id="t_nota">Llevar examenes</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="t_medico">Marcelo Fernandez</td>
+                                        <td id="t_especialidad">Dermatología</td>
+                                        <td id="t_fecha">05/11/2020</td>
+                                        <td id="t_hora">10:00</td>
+                                        <td id="t_lugar">Clinica Isamedica</td>
+                                        <td id="t_nota">Llevar examenes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade active show" id="nav-examenes" role="tabpanel" aria-labelledby="nav-examenes-tab">
+                <div class="col-sm-6">
+                    <div class="table-responsive">
+                        <h5>Otros Productos</h5>
+                        <table class="table table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Tamaño</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Escabeche de cebolla</td>
+                                    <td>1 Kg</td>
+                                    <td>$3000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>Escabeche de ají amarillo</td>
+                                    <td>0,5 Kg</td>
+                                    <td>$2000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>Chucrut</td>
+                                    <td>0,5 Kg</td>
+                                    <td>$3000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="nueva_cita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Nueva Cita</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    
+                    <form id="form-cita">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre_medico" placeholder="Nombre Médico">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="especialidad" placeholder="Especialidad">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="date" class="form-control" id="fecha" placeholder="DD/MM/YYYY">
+                            <input type="time" class="form-control" id="hora" placeholder="HH:MM">
+                            <input type="text" class="form-control" id="lugar" placeholder="Clinica / Hospital">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Nota:</label>
+                            <textarea class="form-control" id="nota"></textarea>
+                        </div>
+                    </form>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-success" data-dismiss="modal" onclick='nueva_cita()'>Agregar</button>
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -222,6 +387,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
         </script>
+
+    <script src="js/calendario.js"></script>
 </body>
 
 </html>
