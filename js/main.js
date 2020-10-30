@@ -87,8 +87,8 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Group 1", "Group 2", "Group 3"],
         datasets: [{
-            label: 'Groups',
-            data: [12, 19, 3]
+            label: 'Perfiles bioquímicos',
+            data: [12, 5, 3]
         }]
     }
 });
