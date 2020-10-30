@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Usuario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Loading Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" 
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">SINARS - Bienvenida Julianne Moore</a>
+      <button class="navbar-toggler position-right d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navigation">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <div class="dropdown-menu dropdown-menu-right">
+                </div>
+            </li>
+         </ul>
+           <button class="btn btn-outline-success border-dark 
+                    font-weight-bold text-white my-2 my-sm-0"
+                    type="submit">Logout</button>
+      </div>
+    </nav>
+      <!-- End Navigation Bar -->
+
+      <!-- Section: Principal -->
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <span data-feather="home"></span>
+                    <span class="navbar-toggler-icon"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" text-light-bg-dark href="#">
+                    Mis Familiares 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    Exámenes
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    Medicamentos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    Calendario
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="col-8">
+            <div class="container-fluid bg-light">
+              <div class="row">
+                <h2>-.-</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/julianne-moore.jpg" alt="100" class="img-thumbnail">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card">
+                    <h2 class="card-header">Datos Personales</h2>
+                    <div class="card-body">
+                      <h3 class="card-title">Julianne Cid Moore</h3>
+                      <p class="h4"><small class="text-muted">RUT:</small>
+                        13.781.999-3</p> 
+                      <p class="h4"><small class="text-muted">FECHA DE NACIMIENTO</small>
+                          03/12/1960</p> 
+                      <p class="h4"><small class="text-muted">EDAD:</small>
+                          59 años</p>
+                      <br>
+                      <h3 class="card-title">Datos de Contacto</h3>
+                      <p class="h4"><small class="text-muted">DIRECCIÓN:</small>
+                          Av El Bosque 5.678, Providencia</p>
+                      <p class="h4"><small class="text-muted">EMAIL:</small>
+                          julianne.moore@gmail.com</p>    
+                      <p class="h4"><small class="text-muted">TELÉFONO:</small>
+                          (+56 9) 9234 5678</p>    
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="card">
+                    <h2 class="card-header">Patologías Asociadas</h2>
+                    <div class="card-body">
+                      <ul>
+                        <h6>
+                        <li>Resistencia a la Insulina</li>
+                        <li>Hipertensión</li>
+                        <li>Hipertiroidismo</li>
+                        <li>Artritis Reumatoide</li>
+                        <li>Osteoporosis en Estudio</li>
+                        </li>
+                      </ul>  
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Section: Principal -->
+    
+    <!-- Section: Enlaces -->
+    <div class="container-fluid bg-dark" id="enlaces">
+      <div class="row">
+        
+    </div> 
+    <!-- End Section: Enlaces -->
+    <footer class="footer bg-dark text-center">
+      <p class="text-muted">&copy; 2020 Awakelab.</p>
+      <p class="text-muted">Grupo Full Stack Python</p>
+    </footer>
+
+    <!-- MODAL FORMS -->
+    <div class="modal" id="profile-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <p class="modal-title" id="profile-modal-label">Perfil</p>
+          </div>
+            <div class="modal-body">
+              Perfil
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" 
+                  class="btn btn-secondary" 
+                  data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+     </div>
+    </div>
+    <div class="modal" id="settings-modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" 
+              aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <p class="modal-title" id="settings-modal-label">Configuración</p>
+          </div>
+          <div class="modal-body">
+            Configuración
+          </div>
+          <div class="modal-footer">
+            <button type="button" 
+                class="btn btn-success">Guardar</button>
+            <button type="button" 
+                class="btn btn-secondary" 
+                data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL FORMS -->
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
