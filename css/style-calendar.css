@@ -1,7 +1,11 @@
 /*CSS CALENDARIO*/
-.container{
-    padding-top: 100px;
+body {
+    background-image: url(../img/background-calendario.jpg);
+    background-size: cover;
+    background-position: center center;
 }
+
+
 
 .btn-container{
     padding-bottom: 50px;
@@ -18,6 +22,14 @@
     border-style: solid;
 }
 
+.calendar-container{
+    background-color: white;
+}
+
 .mes-anterior{
     color: gray;
+}
+
+.tabs{
+    margin-bottom: 100px;
 }

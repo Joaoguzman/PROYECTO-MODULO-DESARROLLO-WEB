@@ -14,26 +14,30 @@
 
 <body>
 
-    <div class="container">
-        <div class="row btn-container text-center">
-            <div class="col-md-12">
-                <h1>Mi Calendario Medico</h1>
-                <br><br>
-            </div>
-            
-            <div class="col-md-6">
+    <div class="container container-header">
+        <!--btn-container text-center-->
+        <h1>Mi Calendario Medico</h1>
+        <br><br>
+        <div class="row">
+
+            <div class="col-6">
                 <button type="button" class="btn btn-success" id="AddCita" data-toggle="modal"
-                data-target="#nueva_cita">Agregar Cita</button>
+                    data-target="#nueva_cita">Agregar Cita</button>
             </div>
-            
-            <div class="col-md-6">
+
+            <div class="col-6">
                 <button type="button" class="btn btn-success" id="AddExamen" data-toggle="modal"
-                data-target="#nuevo_examen">Agregar Examen</button>
+                    data-target="#nuevo_examen">Agregar Examen</button>
             </div>
         </div>
+    </div>
+
+    <div class="container">
         <h4>Noviembre</h4>
+    </div>
+    <div class="container calendar-container">
         <div class="row calendar">
-            
+
             <div class="col">
                 <h4>L</h4>
             </div>
@@ -58,22 +62,22 @@
         </div>
         <div class="row day-calendar">
             <div class="col">
-                <h4 class="mes-anterior" >26</h4>
+                <h4 class="mes-anterior">26</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >27</h4>
+                <h4 class="mes-anterior">27</h4>
             </div>
             <div class="col">
                 <h4 class="mes-anterior">28</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >29</h4>
+                <h4 class="mes-anterior">29</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >30</h4>
+                <h4 class="mes-anterior">30</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >31</h4>
+                <h4 class="mes-anterior">31</h4>
             </div>
             <div class="col">
                 <h4>1</h4>
@@ -176,40 +180,42 @@
                 <h4>30</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >1</h4>
+                <h4 class="mes-anterior">1</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >2</h4>
+                <h4 class="mes-anterior">2</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >3</h4>
+                <h4 class="mes-anterior">3</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >4</h4>
+                <h4 class="mes-anterior">4</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >5</h4>
+                <h4 class="mes-anterior">5</h4>
             </div>
             <div class="col">
-                <h4 class="mes-anterior" >6</h4>
+                <h4 class="mes-anterior">6</h4>
             </div>
         </div>
     </div>
 
     <!--NAV TABS-->
-    <div class="container">
+    <div class="container tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="citas-tab" data-toggle="tab" href="#citas" role="tab" aria-controls="citas" aria-selected="true">Citas</a>
+                <a class="nav-link active" id="citas-tab" data-toggle="tab" href="#citas" role="tab"
+                    aria-controls="citas" aria-selected="true">Citas</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Examenes</a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Examenes</a>
             </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
+        </ul>
+        <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="citas" role="tabpanel" aria-labelledby="citas-tab">
                 <div class="table-responsive">
-                    <table class="table table-sm" >
+                    <table class="table table-sm">
                         <thead class="thead-light">
                             <tr>
                                 <th>Dr. / Dra.</th>
@@ -222,21 +228,21 @@
                         </thead>
                         <tbody id="tabla_citas">
                             <tr>
-                                <td >Marcelo Fernandez</td>
-                                <td >Dermatología</td>
-                                <td >05/11/2020</td>
-                                <td >10:00</td>
-                                <td >Clinica Isamedica</td>
-                                <td >Llevar examenes</td>
+                                <td>Marcelo Fernandez</td>
+                                <td>Dermatología</td>
+                                <td>05/11/2020</td>
+                                <td>10:00</td>
+                                <td>Clinica Isamedica</td>
+                                <td>Llevar examenes</td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="table-responsive">
-                    <table class="table table-sm" >
+                    <table class="table table-sm">
                         <thead class="thead-light">
                             <tr>
                                 <th>Laboratorio</th>
@@ -253,12 +259,12 @@
                                 <td>10:00</td>
                                 <td>Ir en ayuno</td>
                                 <td>Av. siempre viva #442</td>
-                            </tr> 
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
 
 
