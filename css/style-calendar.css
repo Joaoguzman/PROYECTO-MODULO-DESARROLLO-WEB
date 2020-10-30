@@ -17,3 +17,7 @@
 .col{
     border-style: solid;
 }
+
+.mes-anterior{
+    color: gray;
+}

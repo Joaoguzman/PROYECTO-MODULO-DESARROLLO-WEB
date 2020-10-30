@@ -15,18 +15,25 @@
 <body>
 
     <div class="container">
-        <div class="row btn-container ">
-
-            <button type="button" class="col-md-4 btn btn-success" id="AddCita" data-toggle="modal"
+        <div class="row btn-container text-center">
+            <div class="col-md-12">
+                <h1>Mi Calendario Medico</h1>
+                <br><br>
+            </div>
+            
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" id="AddCita" data-toggle="modal"
                 data-target="#nueva_cita">Agregar Cita</button>
-
-
-            <button type="button" class="col-md-4 btn btn-success" id="AddExamen" data-toggle="modal"
-                data-target="#exampleModal">Agregar Examen</button>
-
+            </div>
+            
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" id="AddExamen" data-toggle="modal"
+                data-target="#nuevo_examen">Agregar Examen</button>
+            </div>
         </div>
-
+        <h4>Noviembre</h4>
         <div class="row calendar">
+            
             <div class="col">
                 <h4>L</h4>
             </div>
@@ -51,22 +58,22 @@
         </div>
         <div class="row day-calendar">
             <div class="col">
-                <h4>26</h4>
+                <h4 class="mes-anterior" >26</h4>
             </div>
             <div class="col">
-                <h4>27</h4>
+                <h4 class="mes-anterior" >27</h4>
             </div>
             <div class="col">
-                <h4>28</h4>
+                <h4 class="mes-anterior">28</h4>
             </div>
             <div class="col">
-                <h4>29</h4>
+                <h4 class="mes-anterior" >29</h4>
             </div>
             <div class="col">
-                <h4>30</h4>
+                <h4 class="mes-anterior" >30</h4>
             </div>
             <div class="col">
-                <h4>31</h4>
+                <h4 class="mes-anterior" >31</h4>
             </div>
             <div class="col">
                 <h4>1</h4>
@@ -169,22 +176,22 @@
                 <h4>30</h4>
             </div>
             <div class="col">
-                <h4>1</h4>
+                <h4 class="mes-anterior" >1</h4>
             </div>
             <div class="col">
-                <h4>2</h4>
+                <h4 class="mes-anterior" >2</h4>
             </div>
             <div class="col">
-                <h4>3</h4>
+                <h4 class="mes-anterior" >3</h4>
             </div>
             <div class="col">
-                <h4>4</h4>
+                <h4 class="mes-anterior" >4</h4>
             </div>
             <div class="col">
-                <h4>5</h4>
+                <h4 class="mes-anterior" >5</h4>
             </div>
             <div class="col">
-                <h4>6</h4>
+                <h4 class="mes-anterior" >6</h4>
             </div>
         </div>
     </div>
@@ -215,31 +222,47 @@
                         </thead>
                         <tbody id="tabla_citas">
                             <tr>
-                                <td id="t_medico">Marcelo Fernandez</td>
-                                <td id="t_especialidad">Dermatología</td>
-                                <td id="t_fecha">05/11/2020</td>
-                                <td id="t_hora">10:00</td>
-                                <td id="t_lugar">Clinica Isamedica</td>
-                                <td id="t_nota">Llevar examenes</td>
+                                <td >Marcelo Fernandez</td>
+                                <td >Dermatología</td>
+                                <td >05/11/2020</td>
+                                <td >10:00</td>
+                                <td >Clinica Isamedica</td>
+                                <td >Llevar examenes</td>
                             </tr>
-                            <tr>
-                                <td id="t_medico">Marcelo Fernandez</td>
-                                <td id="t_especialidad">Dermatología</td>
-                                <td id="t_fecha">05/11/2020</td>
-                                <td id="t_hora">10:00</td>
-                                <td id="t_lugar">Clinica Isamedica</td>
-                                <td id="t_nota">Llevar examenes</td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="table-responsive">
+                    <table class="table table-sm" >
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Laboratorio</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Nota</th>
+                                <th>Dirección</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla_examenes">
+                            <tr>
+                                <td>Clinica Isamedica</td>
+                                <td>05/11/2020</td>
+                                <td>10:00</td>
+                                <td>Ir en ayuno</td>
+                                <td>Av. siempre viva #442</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
           </div>
     </div>
 
 
-    <!-- Modal -->
+    <!-- Modal Cita-->
     <div class="modal fade" id="nueva_cita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -268,14 +291,45 @@
                             <textarea class="form-control" id="nota"></textarea>
                         </div>
                     </form>
-
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-success" data-dismiss="modal" onclick='nueva_cita()'>Agregar</button>
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Modal Examen-->
+    <div class="modal fade" id="nuevo_examen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nueva Cita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-cita">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lugar_examen" placeholder="Lugar">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="date" class="form-control" id="fecha_examen" placeholder="DD/MM/YYYY">
+                            <input type="time" class="form-control" id="hora_examen" placeholder="HH:MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Nota:</label>
+                            <textarea class="form-control" id="nota_examen"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal" onclick='nuevo_examen()'>Agregar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 

@@ -3,7 +3,6 @@ function formateDate(string) {
     return info;
 }
 
-
 function nueva_cita(){
     var nombre_medico = document.getElementById("nombre_medico");
     var especialidad = document.getElementById("especialidad");
@@ -27,4 +26,17 @@ function nueva_cita(){
     btn.innerHTML = fila_nueva;
     console.log("btn: ",btn);
     document.getElementById("tabla_citas").appendChild(btn);
+}
+
+function nuevo_examen(){
+    var lugar_examen = document.getElementById("lugar_examen");
+    var fecha_examen = document.getElementById("fecha_examen");
+    var f_examen_invertida = formateDate(fecha_examen.value);
+    var hora_examen = document.getElementById("hora_examen");
+    var nota_examen = document.getElementById("nota_examen");
+
+    var fila_examen_nueva = "<tr><td>"+lugar_examen.value+"</td><td>"+f_examen_invertida+"</td><td>"+hora_examen.value+"</td><td>"+nota_examen.value+"</td></tr>";
+    var btn_examen = document.createElement("tr");
+    btn_examen.innerHTML = fila_examen_nueva;
+    document.getElementById("tabla_examenes").appendChild(btn_examen);
 }
