@@ -18,15 +18,14 @@
         <!--btn-container text-center-->
         <h1>Mi Calendario Medico</h1>
         <br><br>
-        <div class="row">
-
-            <div class="col-6">
-                <button type="button" class="btn btn-success" id="AddCita" data-toggle="modal"
+        <div class="row btn-row">
+            <div class="col-md-6">
+                <button  class="btn btn-success btn-block" id="AddCita" data-toggle="modal"
                     data-target="#nueva_cita">Agregar Cita</button>
             </div>
 
-            <div class="col-6">
-                <button type="button" class="btn btn-success" id="AddExamen" data-toggle="modal"
+            <div class="col-md-6">
+                <button class="btn btn-success btn-block" id="AddExamen" data-toggle="modal"
                     data-target="#nuevo_examen">Agregar Examen</button>
             </div>
         </div>
@@ -202,7 +201,7 @@
 
     <!--NAV TABS-->
     <div class="container tabs">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-pills" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="citas-tab" data-toggle="tab" href="#citas" role="tab"
                     aria-controls="citas" aria-selected="true">Citas</a>
@@ -216,8 +215,8 @@
             <div class="tab-pane fade show active" id="citas" role="tabpanel" aria-labelledby="citas-tab">
                 <div class="table-responsive">
                     <table class="table table-sm">
-                        <thead class="thead-light">
-                            <tr>
+                        <thead class="">
+                            <tr class="bg-success">
                                 <th>Dr. / Dra.</th>
                                 <th>Especialidad</th>
                                 <th>Fecha</th>
@@ -269,7 +268,7 @@
 
 
     <!-- Modal Cita-->
-    <div class="modal fade" id="nueva_cita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="nueva_cita" data-backdrop="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -306,11 +305,11 @@
     </div>
 
     <!-- Modal Examen-->
-    <div class="modal fade" id="nuevo_examen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="nuevo_examen" tabindex="-1" data-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Nueva Cita</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Nueva Cita a Examen</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -318,12 +317,15 @@
                 <div class="modal-body">
                     <form id="form-cita">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="lugar_examen" placeholder="Lugar">
+                            <input type="text" class="form-control" id="lugar_examen" placeholder="Lugar*">
                         </div>
                         <div class="form-group">
-                            <label>Fecha</label>
+                            <label>Fecha * </label>
                             <input type="date" class="form-control" id="fecha_examen" placeholder="DD/MM/YYYY">
                             <input type="time" class="form-control" id="hora_examen" placeholder="HH:MM">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="examen_direccion" placeholder="Dirección *">
                         </div>
                         <div class="form-group">
                             <label for="message-text" class="col-form-label">Nota:</label>
