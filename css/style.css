@@ -1,3 +1,42 @@
+/**/
+
+.jumbotron{
+  margin-top: 30px;
+}
+
+.carousel-item {
+  
+  width: 100%;
+  height: auto;
+}
+.carousel-item img {
+  height: auto;
+  width: 80%;
+}
+
+.noticias{
+  margin-bottom: 50px;
+}
+
+#enlaces{
+  color: white;
+}
+
+.card-header{
+  font-size: medium;
+}
+.card-title{
+  font-size: medium;
+}
+.card-text{
+  font-style: italic;
+}
+
+.carousel-inner .item img {
+  width: 100%;
+}
+
+
 /*NAV BAR CAMBIO*/
 
 #mySidenav a {
