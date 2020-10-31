@@ -10,6 +10,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style-calendar.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css"
 </head>
 
 <body>
@@ -34,9 +35,9 @@
     <div class="container-fluid">
         <div id="mySidenav" class="sidenav">
           <a href="#" id="familiares">Mis Familiares</a>
-          <a href="#" id="examenes">Examenes</a>
-          <a href="#" id="medicamento">Medicamentos</a>
-          <a href="#" id="calendario">Calendario</a>
+          <a href="examenes.html" id="examenes">Examenes</a>
+          <a href="medicamento.html" id="medicamento">Medicamentos</a>
+          <a href="calendario.html" id="calendario">Calendario</a>
         </div>
 
         <div class="w-100">
@@ -46,12 +47,12 @@
                 <br><br>
                 <div class="row btn-row">
                     <div class="col-md-6">
-                        <button class="btn btn-success btn-block" id="AddCita" data-toggle="modal"
+                        <button class="btn btn-primary btn-block" id="AddCita" data-toggle="modal"
                             data-target="#nueva_cita">Agregar Cita</button>
                     </div>
     
                     <div class="col-md-6">
-                        <button class="btn btn-success btn-block" id="AddExamen" data-toggle="modal"
+                        <button class="btn btn-primary btn-block" id="AddExamen" data-toggle="modal"
                             data-target="#nuevo_examen">Agregar Examen</button>
                     </div>
                 </div>
@@ -379,8 +380,12 @@
             </div>
         </div>
     </div>
-
-
+        
+    <br>
+    <br>
+    <footer class="text-center bg-dark" style="height: 100px; color: white;">
+        <p style="line-height: 100px;">Evaluación Nº 1 - Full Stack Python 154-1 - Grupo 2</p>
+    </footer>
 
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
