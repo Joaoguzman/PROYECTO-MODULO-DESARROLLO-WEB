@@ -159,7 +159,7 @@ var chartOptions = {
 };
 
 var barChart = new Chart(densityCanvas, {
-    type: 'bar',
+    type: 'line',
     data: planetData,
     options: chartOptions
 });
