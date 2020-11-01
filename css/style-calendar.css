@@ -35,18 +35,9 @@ body {
     color: gray;
 }
 
-<<<<<<< HEAD
 .tabs{
     padding-top: 30px;
 }
 
 
 
-=======
-@media(hover: hover) and (pointer: fine) {
-    #mySidenav a:hover {
-      left: 0;
-      z-index: 1;
-    }
-}
->>>>>>> calendario
