@@ -34,3 +34,10 @@ body {
 .mes-anterior{
     color: gray;
 }
+
+@media(hover: hover) and (pointer: fine) {
+    #mySidenav a:hover {
+      left: 0;
+      z-index: 1;
+    }
+}
