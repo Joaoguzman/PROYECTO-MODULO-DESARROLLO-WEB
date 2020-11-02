@@ -13,77 +13,109 @@
       crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" 
         rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-nav.css">
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">SINARS - Sistema Nacional de Registro de Salud</a>
+    <!doctype html>
+    <html lang="es">
+  <head>
+    <title>SINARS - Sistema Nacional de Registro de Salud</title>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Loading Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" 
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-      <!-- Navigation Bar Hamburger-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navigation"
-        aria-expanded="false"
-        aria-controls="navigation" 
-        aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- End Navigation Bar Hamburger -->
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="navigation">
-         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
 
-            <li class="nav-item dropdown">
-              <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                  Login <span class="caret"></span>
-              </a>
-              <div class="dropdown-menu">
-                <form class="px-4 py-3">
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@xxx.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormPassword1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                      <label class="form-check-label" for="dropdownCheck">
-                        Recordar Datos
-                      </label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Ingresar</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">No está registrado? Regístrese aquí</a>
-                <a class="dropdown-item" href="#">Olvidó su contraseña?</a>
-              </div>
-                <div class="dropdown-menu dropdown-menu-right">
-              </div>
-            </li>
-         </ul>
-         <form class="form-inline my-2 my-lg-0">
-           <input class="form-control mr-sm-2" 
-              type="text"
-              placeholder="Buscar" 
-              aria-label="Buscar">
-           <button class="btn btn-outline-success border-dark 
-                    font-weight-bold text-white my-2 my-sm-0"
-                    type="submit">Buscar</button>
-         </form>
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+<!-- Custom styles -->
+
+</head>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-custom flex-md-nowrap p-0 shadow">
+<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">SINARS - Sistema Nacional de Registro de Salud</a>
+<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+  <ul class="navbar-nav px-3">
+<li class="nav-item text-nowrap">
+  <li class="nav-item dropdown">
+    <a
+        href="#"
+        class="nav-link dropdown-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false">
+        Login <span class="caret"></span>
+    </a>
+    <div class="dropdown-menu">
+      <form class="px-4 py-3">
+        <div class="form-group">
+          <label for="exampleDropdownFormEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@xxx.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleDropdownFormPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+            <label class="form-check-label" for="dropdownCheck">
+              Recordar Datos
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </form>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">No está registrado? Regístrese aquí</a>
+      <a class="dropdown-item" href="#">Olvidó su contraseña?</a>
+    </div>
+      <div class="dropdown-menu dropdown-menu-right">
+    </div>
+  </li>
+  </ul>
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" 
+    type="text"
+    placeholder="Buscar" 
+    aria-label="Buscar">
+  <button class="btn btn-outline-success border-dark 
+          font-weight-bold text-white my-2 my-sm-0"
+          type="submit">Buscar</button>
+
+</ul>
+</nav>
+
+           
       </div>
       <!-- Navigation Links -->
     </nav>
@@ -113,7 +145,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/hands-2906458_1920.jpg" class="d-block w-100" alt="50">
+            <img src="img/dpctpriiiiiiiiiiiiiiiiiiikkkkkkkkkkkkkj8.jpg" class="d-block w-100" alt="50">
             <div class="carousel-caption d-none d-md-block">
               <h1>SINARS</h1>
               <p class="h2">Primer sistema de registro nacional de datos de salud de Chile</p>
