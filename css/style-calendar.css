@@ -1,10 +1,4 @@
 /*CSS CALENDARIO*/
-body {
-    background-image: url(../img/background-calendario.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
 .container-header{
     margin-top: 50px;
 }
